@@ -25,7 +25,7 @@ jobs:
       - name: Run PMD analysis
         uses: pmd/pmd-github-action@v2
         with:
-          rulesets: "java-basic"
+          rulesets: "ruleset.xml"
 
       - name: Upload PMD report as artifact
         uses: actions/upload-artifact@v4
