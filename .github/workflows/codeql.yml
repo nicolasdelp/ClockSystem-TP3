@@ -40,10 +40,11 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
-          languages: "java-kotlin"
+          languages: "java"
           queries: security-experimental,security-extended,security-and-quality
+          source-path: ./src/main/java
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
         with:
-          category: "/language:java-kotlin"
+          category: "/language:java"
