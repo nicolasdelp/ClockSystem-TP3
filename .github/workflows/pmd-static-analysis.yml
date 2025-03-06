@@ -29,9 +29,3 @@ jobs:
           version: "6.55.0"
           sourcePath: "app/src/main/java"
           rulesets: "java-basic"
-
-      - name: Upload PMD report as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: PMD Report
-          path: .
