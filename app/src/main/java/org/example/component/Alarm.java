@@ -38,6 +38,3 @@ public class Alarm {
 	
 	public static void stopRing() throws NullPointerException {
 		ringer.cancel(); } }
-
-
-
