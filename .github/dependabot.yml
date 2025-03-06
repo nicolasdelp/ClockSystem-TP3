@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Gradle Update
+  - package-ecosystem: "gradle"
+    directory: "/app/"
+    schedule:
+      interval: "weekly" # (daily, weekly, monthly)
+
+  # GitHub Actions Update
+  - package-ecosystem: "github-actions"
+    directory: "/.github/workflows/"
+    schedule:
+      interval: "weekly" # (daily, weekly, monthly)
