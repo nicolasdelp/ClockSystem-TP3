@@ -27,7 +27,7 @@ jobs:
           rulesets: "java-basic"
 
       - name: Upload PMD report as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: pmd-report
-          path: pmd-report.xml
+          path: app/build/reports/analysis
