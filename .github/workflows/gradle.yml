@@ -30,7 +30,7 @@ jobs:
           gradle-version: "8.10"
 
       - name: Build with Gradle 8.10
-        run: gradle build
+        run: gradle build --no-daemon -Djava.awt.headless=true
 
       - name: Publish a test report
         uses: actions/upload-artifact@v4
