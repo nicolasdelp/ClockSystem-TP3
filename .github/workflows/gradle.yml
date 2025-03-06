@@ -29,14 +29,20 @@ jobs:
         with:
           gradle-version: "8.10"
 
-      - name: Install xvfb
+      - name: Install xvfb (for GUI tests)
         run: sudo apt-get install -y xvfb
 
       - name: Build with Gradle 8.10
         run: xvfb-run --auto-servernum gradle build --no-daemon
 
+      - name: Create artifact folder
+        run: mkdir -p reports/artifacts
+
+      - name: Create artifact file
+        run: echo hello > reports/artifacts/output.txt
+
       - name: Publish a test report
         uses: actions/upload-artifact@v4
         with:
           name: artifact
-          path: test/reports/artifact/
+          path: reports/artifacts/output.txt
