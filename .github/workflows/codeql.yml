@@ -42,7 +42,7 @@ jobs:
         with:
           languages: "java"
           queries: security-experimental,security-extended,security-and-quality
-          source-path: ./src/main/java
+          source-path: ./build/classes
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
