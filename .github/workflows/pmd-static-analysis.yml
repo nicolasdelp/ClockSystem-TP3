@@ -34,4 +34,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pmd-report
-          path: ./ruleset.xml
+          path: build/reports/pmd
