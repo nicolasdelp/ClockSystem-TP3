@@ -35,14 +35,8 @@ jobs:
       - name: Build with Gradle 8.10
         run: xvfb-run --auto-servernum gradle build --no-daemon
 
-      - name: Create artifact folder
-        run: mkdir -p reports/artifacts
-
-      - name: Create artifact file
-        run: echo hello > reports/artifacts/output.txt
-
       - name: Publish a test report
         uses: actions/upload-artifact@v4
         with:
           name: artifact
-          path: reports/artifacts/output.txt
+          path: app/build/reports/tests
