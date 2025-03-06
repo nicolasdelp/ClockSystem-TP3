@@ -27,7 +27,7 @@ jobs:
         id: pmd
         with:
           version: "6.55.0"
-          sourcePath: "src/main/java"
+          sourcePath: "app/src/main/java"
           rulesets: "java-basic"
 
       - name: Upload PMD report as artifact
