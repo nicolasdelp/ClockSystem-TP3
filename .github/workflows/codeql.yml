@@ -37,17 +37,13 @@ jobs:
       - name: Build with Gradle 8.10
         run: xvfb-run --auto-servernum gradle build --no-daemon
 
-      - name: Compile Java code
-        run: |
-          ./gradlew compileJava
-
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
-          languages: "java"
+          languages: "java-kotlin"
           queries: security-experimental,security-extended,security-and-quality
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
         with:
-          category: "/language:java"
+          category: "/language:java-kotlin"
