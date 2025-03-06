@@ -1,6 +1,7 @@
 ![Build Status](https://github.com/nicolasdelp/ClockSystem-TP3/actions/workflows/gradle.yml/badge.svg)
 ![Build Status](https://github.com/nicolasdelp/ClockSystem-TP3/actions/workflows/pmd-static-analysis.yml/badge.svg)
 ![Build Status](https://github.com/nicolasdelp/ClockSystem-TP3/actions/workflows/codeql.yml/badge.svg)
+![Build Status](https://github.com/nicolasdelp/ClockSystem-TP3/actions/workflows/scorecard.yml/badge.svg)
 
 
 # ClockSystem
