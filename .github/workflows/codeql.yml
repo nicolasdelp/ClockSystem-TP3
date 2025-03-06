@@ -37,6 +37,10 @@ jobs:
       - name: Build with Gradle 8.10
         run: xvfb-run --auto-servernum gradle build --no-daemon
 
+      - name: Compile Java code
+        run: |
+          ./gradlew compileJava
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
